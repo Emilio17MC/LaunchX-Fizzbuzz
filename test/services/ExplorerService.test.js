@@ -25,7 +25,7 @@ describe("Tests para ExplorerService", () => {
 
     expect(
       ExplorerService.getAmountOfExplorersByMission(explorers, "node")
-    ).toBe(2);
+    ).toBe(3);
   });
 
   test("3. getExplorersUsernamesByMission(): Obtener los nombres de usuarios de una misión específica.", () => {
