@@ -7,4 +7,10 @@ describe("Tests for ExplorerController", () => {
         expect(ExplorerController.getExplorersByMission('node')).not.toBeUndefined();
 
     });
+
+    test("2) ExplorerController retorna una lista con los githubUsername de la misión dada", () => {
+
+        expect(ExplorerController.getExplorersUsernamesByMission('node')).not.toBeUndefined();
+
+    });
 });
