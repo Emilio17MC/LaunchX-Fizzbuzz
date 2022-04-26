@@ -19,4 +19,8 @@ describe("Tests for ExplorerController", () => {
         expect(ExplorerController.getExplorersAmountByMission("node")).toBe(10);
 
     });
+
+    test("4) ExplorerController retorna el número, FIZZ, BUZZ o FIZZBUZZ según sea el número que reciba", () => {
+        expect(ExplorerController.getValidationInNumber(1)).toBe(1);
+    });
 });
