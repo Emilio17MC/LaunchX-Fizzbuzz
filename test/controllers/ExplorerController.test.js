@@ -13,4 +13,10 @@ describe("Tests for ExplorerController", () => {
         expect(ExplorerController.getExplorersUsernamesByMission('node')).not.toBeUndefined();
 
     });
+
+    test("3) ExplorerController retorna la cantidad de explorers en la misión dada", () => {
+
+        expect(ExplorerController.getExplorersAmountByMission('node')).toBe(10);
+
+    });
 });
