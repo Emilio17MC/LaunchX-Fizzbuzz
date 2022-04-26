@@ -38,4 +38,20 @@ describe("Tests para FizzbuzzService", () => {
             { name: "Explorer15", score: 15, trick: "FIZZBUZZ" }
         );
     });
+
+    test("5. La validación será el mismo número", () => {
+        expect(FizzbuzzService.applyValidationInNumber(1)).toBe(1);
+    });
+
+    test("6. La validación será FIZZ", () => {
+        expect(FizzbuzzService.applyValidationInNumber(3)).toBe("FIZZ");
+    });
+
+    test("7. La validación será BUZZ", () => {
+        expect(FizzbuzzService.applyValidationInNumber(5)).toBe("BUZZ");
+    });
+
+    test("8. La validación será FIZZBUZZ", () => {
+        expect(FizzbuzzService.applyValidationInNumber(15)).toBe("FIZZBUZZ");
+    });
 });
